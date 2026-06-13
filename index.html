@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caça-Palavras Agro Sustentável</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+    <h1>🌱 Caça-Palavras Agro Sustentável</h1>
+    <p>Encontre as palavras escondidas sobre agro, água, solo e meio ambiente.</p>
+</header>
+
+<main class="container">
+    <section class="placar">
+        <div>
+            <span id="tempo">00:00</span>
+            <p>Tempo</p>
+        </div>
+        <div>
+            <span id="pontos">0</span>
+            <p>Pontos</p>
+        </div>
+        <div>
+            <span id="encontradas">0/14</span>
+            <p>Encontradas</p>
+        </div>
+    </section>
+
+    <section class="jogo">
+        <div class="area-grid">
+            <p class="instrucao">Clique nas letras em sequência para formar uma palavra.</p>
+            <div id="grid" class="grid"></div>
+            <p>Palavra selecionada: <strong id="selecionada">---</strong></p>
+            <button id="limpar">Limpar seleção</button>
+        </div>
+
+        <aside class="lista">
+            <h2>Palavras escondidas</h2>
+            <ul id="listaPalavras"></ul>
+        </aside>
+    </section>
+
+    <section id="mensagem" class="mensagem">
+        Procure palavras na horizontal, vertical e diagonal.
+    </section>
+</main>
+
+<footer>
+    <p>Caça-Palavras Agro Sustentável © 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

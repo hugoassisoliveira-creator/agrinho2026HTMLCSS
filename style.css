@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff3b0, #c7f9cc);
+    color: #243018;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #2d6a4f, #74c69d);
+    color: white;
+}
+
+.cabecalho h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1150px;
+    margin: 25px auto;
+}
+
+.placar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.placar div {
+    background: white;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+.placar span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+.jogo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.area-grid, .lista, .mensagem {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+.instrucao {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(14, 38px);
+    gap: 4px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.letra {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    background: #b7e4c7;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: #1b4332;
+}
+
+.letra:hover {
+    background: #95d5b2;
+}
+
+.letra.selecionada {
+    background: #ffd166;
+    color: #000;
+}
+
+.letra.encontrada {
+    background: #2d6a4f;
+    color: white;
+}
+
+#limpar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #f77f00;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.lista h2 {
+    text-align: center;
+    color: #2d6a4f;
+    margin-bottom: 12px;
+}
+
+.lista ul {
+    list-style: none;
+}
+
+.lista li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background: #f1faee;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.lista li.ok {
+    background: #2d6a4f;
+    color: white;
+    text-decoration: line-through;
+}
+
+.mensagem {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    background: #1b4332;
+    color: white;
+    padding: 16px;
+    margin-top: 30px;
+}
+
+@media (max-width: 950px) {
+    .jogo {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: repeat(14, 30px);
+    }
+
+    .letra {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 520px) {
+    .placar {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: repeat(14, 23px);
+        gap: 3px;
+    }
+
+    .letra {
+        width: 23px;
+        height: 23px;
+        font-size: 11px;
+        border-radius: 5px;
+    }
+
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+}
